@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Festember App</title>
+    <meta name="description" content="Privacy Policy for the official Festember App - NIT Trichy's cultural festival mobile application">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .header h1 {
+            color: #2c3e50;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .header p {
+            color: #7f8c8d;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        .last-updated {
+            display: inline-block;
+            background: #e8f4fd;
+            color: #2980b9;
+            padding: 8px 16px;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-top: 15px;
+        }
+
+        .content {
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 50px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+            scroll-margin-top: 100px;
+        }
+
+        h2 {
+            color: #2c3e50;
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #3498db;
+            position: relative;
+        }
+
+        h3 {
+            color: #34495e;
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin: 25px 0 15px 0;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+            color: #555;
+        }
+
+        ul {
+            margin: 15px 0;
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        strong {
+            color: #2c3e50;
+            font-weight: 600;
+        }
+
+        .table-of-contents {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 40px;
+            border-left: 5px solid #3498db;
+        }
+
+        .table-of-contents h3 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            border-bottom: none;
+        }
+
+        .toc-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .toc-list li {
+            margin-bottom: 10px;
+        }
+
+        .toc-list a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: block;
+            padding: 8px 15px;
+            border-radius: 8px;
+        }
+
+        .toc-list a:hover {
+            background: #3498db;
+            color: white;
+            transform: translateX(5px);
+        }
+
+        .contact-box {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .contact-box h3 {
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.9rem;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #3498db;
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 1.2rem;
+            box-shadow: 0 10px 20px rgba(52, 152, 219, 0.3);
+            transition: all 0.3s ease;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(52, 152, 219, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            .header {
+                padding: 25px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .content {
+                padding: 30px 25px;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            .back-to-top {
+                bottom: 20px;
+                right: 20px;
+                width: 45px;
+                height: 45px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="section" id="introduction">
+                <h2>1. Introduction</h2>
+                <p>This Privacy Policy describes how the Festember App ("we," "our," or "us") collects, uses, and protects your personal information when you use our mobile application. Festember is the official app for the cultural festival of National Institute of Technology (NIT) Tiruchirappalli.</p>
+                <p>By using our app, you agree to the collection and use of information in accordance with this policy.</p>
+            </div>
+
+            <div class="section" id="information-collection">
+                <h2>2. Information We Collect</h2>
+                
+                <h3>2.1 Personal Information</h3>
+                <p>We collect the following personal information when you use our app:</p>
+                <ul>
+                    <li><strong>Account Information:</strong> Email address, password (encrypted), and profile details</li>
+                    <li><strong>Student Information:</strong> Name, college details, student ID (for NIT Trichy students using DAuth)</li>
+                    <li><strong>Profile Data:</strong> Contact information, and other details you provide</li>
+                    <li><strong>Registration Data:</strong> Information provided when registering for events, workshops, informals, and guest lectures</li>
+                </ul>
+
+                <h3>2.2 Automatically Collected Information</h3>
+                <ul>
+                    <li><strong>Device Information:</strong> Device model, operating system version, unique device identifiers</li>
+                    <li><strong>Usage Data:</strong> App usage patterns, features accessed, and interaction data</li>
+                    <li><strong>Notification Data:</strong> FCM (Firebase Cloud Messaging) tokens for push notifications</li>
+                </ul>
+
+                <h3>2.3 Authentication Data</h3>
+                <ul>
+                    <li><strong>DAuth Integration:</strong> For NIT Trichy students, we collect authentication data through the college's DAuth system, including student verification status</li>
+                </ul>
+            </div>
+
+            <div class="section" id="information-use">
+                <h2>3. How We Use Your Information</h2>
+                <p>We use the collected information for the following purposes:</p>
+                <ul>
+                    <li><strong>Account Management:</strong> Creating and maintaining your account, authentication, and profile management</li>
+                    <li><strong>Event Registration:</strong> Processing registrations for events, workshops, informals, and guest lectures</li>
+                    <li><strong>Communication:</strong> Sending notifications about event updates, registrations, and festival information</li>
+                    <li><strong>App Functionality:</strong> Providing core app features and improving user experience</li>
+                    <li><strong>Security:</strong> Protecting against fraud, unauthorized access, and maintaining app security</li>
+                    <li><strong>Analytics:</strong> Understanding app usage to improve features and performance</li>
+                </ul>
+            </div>
+
+            <div class="section" id="information-sharing">
+                <h2>4. Information Sharing and Disclosure</h2>
+                <p>We do not sell, trade, or rent your personal information to third parties. We may share information in the following circumstances:</p>
+
+                <h3>4.1 Festival Organization</h3>
+                <ul>
+                    <li>Event organizers and coordinators (only relevant registration information)</li>
+                    <li>College administration (for verification and event management purposes)</li>
+                </ul>
+
+                <h3>4.2 Third-Party Services</h3>
+                <ul>
+                    <li><strong>Firebase/Google Services:</strong> For authentication, cloud messaging, and analytics</li>
+                    <li><strong>DAuth System:</strong> For student authentication (NIT Trichy students only)</li>
+                </ul>
+
+                <h3>4.3 Legal Requirements</h3>
+                <p>We may disclose information if required by law, court order, or to protect our rights and safety.</p>
+            </div>
+
+            <div class="section" id="data-security">
+                <h2>5. Data Storage and Security</h2>
+                
+                <h3>5.1 Security Measures</h3>
+                <ul>
+                    <li>Passwords are encrypted and securely stored</li>
+                    <li>Data transmission is protected using industry-standard encryption</li>
+                    <li>Access controls limit who can view your information</li>
+                    <li>Regular security audits and updates</li>
+                </ul>
+
+                <h3>5.2 Data Retention</h3>
+                <ul>
+                    <li>Account information is retained while your account is active</li>
+                    <li>Registration data is kept for the duration of the festival and academic year</li>
+                    <li>You may request account deletion at any time</li>
+                </ul>
+            </div>
+
+            <div class="section" id="user-rights">
+                <h2>6. Your Rights and Choices</h2>
+                
+                <h3>6.1 Account Control</h3>
+                <ul>
+                    <li>Update your profile information at any time</li>
+                    <li>Change your notification preferences</li>
+                    <li>Delete your account and associated data</li>
+                </ul>
+
+                <h3>6.2 Data Access</h3>
+                <ul>
+                    <li>Request a copy of your personal data</li>
+                    <li>Request correction of inaccurate information</li>
+                    <li>Request deletion of your data (subject to legal requirements)</li>
+                </ul>
+
+                <h3>6.3 Communication Preferences</h3>
+                <ul>
+                    <li>Opt-out of push notifications through app settings or device settings</li>
+                    <li>Unsubscribe from email communications (where applicable)</li>
+                </ul>
+            </div>
+
+            <div class="section" id="third-party">
+                <h2>7. Third-Party Services</h2>
+                <p>Our app integrates with the following third-party services:</p>
+
+                <h3>7.1 Firebase Services</h3>
+                <ul>
+                    <li><strong>Firebase Cloud Messaging:</strong> For push notifications</li>
+                    <li><strong>Firebase Analytics:</strong> For app usage analytics</li>
+                </ul>
+
+                <h3>7.2 DAuth Integration</h3>
+                <ul>
+                    <li>College authentication system for NIT Trichy students</li>
+                    <li>Governed by NIT Trichy's privacy policies</li>
+                </ul>
+            </div>
+
+            <div class="section" id="children-privacy">
+                <h2>8. Children's Privacy</h2>
+                <p>Our app is intended for college students and individuals 13 years and older. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided personal information, please contact us.</p>
+            </div>
+
+            <div class="section" id="policy-changes">
+                <h2>9. Changes to Privacy Policy</h2>
+                <p>We may update this Privacy Policy from time to time. We will notify you of any changes by:</p>
+                <ul>
+                    <li>Posting the new policy in the app</li>
+                    <li>Sending a notification through the app</li>
+                    <li>Updating the "Last Updated" date</li>
+                </ul>
+                <p>Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+            </div>
+
+            <div class="section" id="data-protection">
+                <h2>10. Data Protection Rights</h2>
+                <p>Depending on your location, you may have the following rights:</p>
+                <ul>
+                    <li>Right to access your personal data</li>
+                    <li>Right to rectification of inaccurate data</li>
+                    <li>Right to erasure ("right to be forgotten")</li>
+                    <li>Right to restrict processing</li>
+                    <li>Right to data portability</li>
+                    <li>Right to object to processing</li>
+                </ul>
+            </div>
+
+            <div class="section" id="contact">
+                <h2>11. Contact Information</h2>
+                <p>If you have questions, concerns, or requests regarding this Privacy Policy or your personal data, please contact us:</p>
+                
+                <div class="contact-box">
+                    <h3>Festember App Team</h3>
+                    <div class="contact-info">
+                        <strong>Email:</strong> pawan.nitt26@gmail.com<br>
+                        <strong>Address:</strong> National Institute of Technology Tiruchirappalli, Tamil Nadu, India<br>
+                        <strong>Phone:</strong> +91 76676 13109
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>12. Governing Law</h2>
+                <p>This Privacy Policy is governed by the laws of India and any disputes will be resolved in the courts of Tamil Nadu, India.</p>
+            </div>
+
+            <div class="section">
+                <h2>13. Consent</h2>
+                <p>By using the Festember App, you consent to:</p>
+                <ul>
+                    <li>Collection and use of your information as described in this policy</li>
+                    <li>Transfer of your information as described above</li>
+                    <li>Use of cookies and similar technologies</li>
+                </ul>
+                <p><em>This Privacy Policy is effective as of Sept 14, 2025 and applies to all users of the Festember App.</em></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Festember, NIT Trichy. All rights reserved.</p>
+    </div>
+
+    <a href="#" class="back-to-top" id="backToTop">↑</a>
+
+    <script>
+        // Back to top functionality
+        const backToTop = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+
+        backToTop.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('.toc-list a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
